@@ -8,7 +8,7 @@ body {
 main.content, footer {
     margin-left: 20px;
 }
-section {
+.border {
     border: 1px solid #ccc;
     padding: 15px;
     margin-bottom: 20px;
