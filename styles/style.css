@@ -31,18 +31,6 @@ main.content, footer {
     cursor: pointer;
     font-size: 14px;
 }
-.user-actions button {
-    background-color: #04AA6D;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.user-actions .login-btn {
-    background-color: #d9eee1;
-    color: black;
-}
 .tech-menu {
     display: flex;
     justify-content: center;
@@ -74,7 +62,22 @@ main.content, footer {
     text-align: center;
     margin-top: 30px;
 }
-
 .languages, .algorithms, .projects {
     text-align: center;
+}
+.btn, .login-btn {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover, .login-btn {
+    background-color: #45a049;
+}
+.login-btn {
+    background-color: #d9eee1;
+    color: black;
 }
