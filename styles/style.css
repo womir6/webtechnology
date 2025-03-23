@@ -81,3 +81,48 @@ main.content, footer {
     background-color: #d9eee1;
     color: black;
 }
+footer {
+    background-image: url("background.png");
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.footer-menu a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+.footer-section h3 {
+    color: #ffcc00;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
