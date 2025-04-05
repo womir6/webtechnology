@@ -6,13 +6,13 @@
     <meta name="description" content="Безкоштовний та простий у використанні сайт для вивчення програмування.">
     <meta name="keywords" content="W3Schools, навчання, програмування, HTML, CSS, JavaScript">
     <meta name="author" content="Данило Максимов">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
     <title>Довідник з програмування</title>
 </head>
 <body>
+    <div class="sticky">
     <header class="top-bar">
         <div class="logo">
             <img src="images/logotype.png" alt="Логотип" width="50">
@@ -58,13 +58,12 @@
         <a href="#">AI</a>
         <a href="#">Go</a>
     </nav>
-    
+</div>
     <main class="content">
         <div class="border">
         <div class="welcome">
             <h2>Ласкаво просимо до нашого онлайн-ресурсу!</h2>
             <p>Цей сайт містить <em>корисну інформацію</em> для освоєння основ програмування, веб-розробки та технологій, які використовуються у сучасному програмуванні.</p>
-        </div>  
         <div class="search-section">
             <div class="search-title">
                 <h2>Найди те, що тобі потрібно</h2>
@@ -74,42 +73,148 @@
             </div>
         </div>
         </div>
+    </div>  
         <div class="border">
         <div class="languages">
             <h2>Популярні мови програмування</h2>
-            <div class="language-list">
-                <p><a href="#"><u>Python</u></a> - універсальна мова, зокрема для аналізу даних та штучного інтелекту.</p>
-                <p><a href="#"><u>C++</u></a> - потужна мова для розробки програмного забезпечення високої продуктивності.</p>
-                <p><a href="#"><u>JavaScript</u></a> - мова для веб-розробки, що працює в браузері.</p>
-                <p><a href="#"><u>Java</u></a> - популярна мова для корпоративних рішень і мобільних додатків.</p>
-                <p><a href="#"><u>HTML & CSS</u></a> - основа веб-розробки для створення структур та стилів сторінок.</p>
-                <p><a href="#"><u>SQL</u></a> - мова для роботи з базами даних, включаючи створення запитів та маніпулювання даними.</p>
+            <div class="section">
+                <div class="card" style="background:#d7f7f3">
+                  <h2>HTML</h2>
+                  <div class="code-box">
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                  </div>
+                  <br><a class="btn">Спробуй!</a>
+                </div>
+                <div class="card" style="background:#fef5c5">
+                  <h2>CSS</h2>
+                  <div class="code-box">
+                    body {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    }
+                  </div>
+                  <br><a class="btn">Спробуй!</a>
+                </div>
+                <div class="card" style="background:#1d1f27; color:white">
+                  <h2>JavaScript</h2>
+                  <div class="code-box">
+                    alert("Hello World!");
+                  </div>
+                  <br><a class="btn">Спробуй!</a>
+                </div>
+                <div class="card" style="background:lightblue">
+                  <h2>Python</h2>
+                  <div class="code-box">
+                    print("Hello World")
+                  </div>
+                  <br><a class="btn">Спробуй!</a>
+                </div>
+              </div>
             </div>
-        </div>
     </div>
     <div class="border">
         <div class="algorithms">
-            <h2>Основні алгоритми</h2>
-            <p>На нашому сайті ви знайдете детальне пояснення базових алгоритмів, таких як:</p>
-            <div class="algorithm-list">
-                <p><a href="#"><u>Алгоритм сортування</u></a></p>
-                <p><a href="#"><u>Алгоритм пошуку</u></a></p>
-                <p><a href="#"><u>Графові алгоритми</u></a></p>
-                <p><a href="#"><u>Динамічне програмування</u></a></p>
-                <p><a href="#"><u>Рекурсія</u></a></p>
-            </div>
+            <h2>Популярні алгоритми</h2>
+            <div class="section">
+            <div class="card" style="background:lightpink">
+                <h2>Binary Search</h2>
+                <div class="code-box">
+                  def binary_search(arr, x):<br>
+                  &nbsp;&nbsp;low = 0<br>
+                  &nbsp;&nbsp;high = len(arr) - 1<br>
+                  &nbsp;&nbsp;while low <= high:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;mid = (low + high) // 2<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if arr[mid] == x:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return mid<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;elif arr[mid] < x:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low = mid + 1<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high = mid - 1<br>
+                  &nbsp;&nbsp;return -1
+                </div>
+                <br><a class="btn">Вчити</a>
+              </div>
+              <div class="card" style="background:lightyellow">
+                <h2>Bubble Sort</h2>
+                <div class="code-box">
+                  def bubble_sort(arr):<br>
+                  &nbsp;&nbsp;n = len(arr)<br>
+                  &nbsp;&nbsp;for i in range(n):<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, n-i-1):<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if arr[j] > arr[j+1]:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[j], arr[j+1] = arr[j+1], arr[j]
+                </div>
+                <br><a class="btn">Вчити</a>
+              </div>
+              <div class="card" style="background:lightblue">
+                <h2>Fibonacci (Recursion)</h2>
+                <div class="code-box">
+                  def fib(n):<br>
+                  &nbsp;&nbsp;if n <= 1:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;return n<br>
+                  &nbsp;&nbsp;return fib(n-1) + fib(n-2)
+                </div>
+                <br><a class="btn">Вчити</a>
+              </div>
+              <div class="card" style="background:lightgreen">
+                <h2>Dijkstra's Algorithm</h2>
+                <div class="code-box">
+                  import heapq<br>
+                  def dijkstra(graph, start):<br>
+                  &nbsp;&nbsp;dist = {node: float('inf') for node in graph}<br>
+                  &nbsp;&nbsp;dist[start] = 0<br>
+                  &nbsp;&nbsp;queue = [(0, start)]<br>
+                  &nbsp;&nbsp;while queue:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;current_dist, node = heapq.heappop(queue)<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if current_dist > dist[node]: continue<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;for neighbor, weight in graph[node].items():<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance = current_dist + weight<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if distance < dist[neighbor]:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist[neighbor] = distance<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;heapq.heappush(queue, (distance, neighbor))<br>
+                  &nbsp;&nbsp;return dist
+                </div>
+                <br><a class="btn">Вчити</a>
+              </div>
+              </div>
         </div>
     </div>
     <div class="border">
         <div class="projects">
             <h2>Рекомендовані проєкти для навчання</h2>
-            <div class="project-list">
-                <p><a href="#">Список справ (To-Do App)</a></p>
-                <p><a href="#">Калькулятор</a></p>
-                <p><a href="#">Прогноз погоди</a></p>
-                <p><a href="#">Чат-додаток</a></p>
-                <p><a href="#">Персональний блог</a></p>
-            </div>
+            <div class="section">
+            <div class="card" style="background:lightyellow">
+                <h3>To-Do List</h3>
+                <p>Створи простий список завдань за допомогою HTML, CSS та JavaScript. Ідеально для навчання роботи з DOM.</p>
+                <br><a class="btn">Більше</a>
+              </div>
+            
+              <div class="card" style="background:lightblue">
+                <h3>Прогноз погоди</h3>
+                <p>Розроби додаток прогнозу погоди з використанням безкоштовного API для показу погоди у будь-якому місті.</p>
+                <br><a class="btn">Більше</a>
+              </div>
+            
+              <div class="card" style="background:lightpink">
+                <h3>Слайд-шоу</h3>
+                <p>Створи слайд-шоу з автоматичною прокруткою, кнопками "вперед/назад" та плавними переходами.</p>
+                <br><a class="btn">Більше</a>
+              </div>
+            
+              <div class="card" style="background:lightgreen">
+                <h3>Калькулятор</h3>
+                <p>Реалізуй повнофункціональний калькулятор з кнопками, введенням та математичними операціями.</p>
+                <br><a class="btn">Більше</a>
+              </div>
+            
+              <div class="card" style="background:#fef2c0">
+                <h3 class="blog-title">Персональний блог
+                    <span class="floating-label">NEW</span>
+                </h3>
+                <p>Зроби базовий макет блогу з дописами, зображеннями та адаптивним дизайном.</p>
+                <br><a class="btn">Більше</a>
+              </div>
+        </div>
         </div>
     </div>
     </main>
@@ -176,5 +281,6 @@
         </div>
         <p>&copy; 2025 Онлайн-довідник з програмування. Усі права захищені.</p>
     </footer>
+    <a href="#top" id="goTopBtn">⬆</a>
 </body>
 </html>
