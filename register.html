@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Безкоштовний та простий у використанні сайт для вивчення програмування.">
-    <meta name="keywords" content="W3Schools, навчання, програмування, HTML, CSS, JavaScript">
-    <meta name="author" content="Данило Максимов">
-    
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/register.css">
-    <link rel="icon" href="images/logo.ico" type="image/x-icon">
-    <title>Реєстрація</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Безкоштовний та простий у використанні сайт для вивчення програмування.">
+  <meta name="keywords" content="W3Schools, навчання, програмування, HTML, CSS, JavaScript">
+  <meta name="author" content="Данило Максимов">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <title>Реєстрація</title>
 </head>
 <body>
-    <div class="container">
-        <div class="registration-box">
-            <h2>Реєстрація</h2>
-            <p>Вже маєте акаунт? <a href="#">Увійти</a></p>
-            <form method="post">
-                <input type="email" name="email" placeholder="Електронна пошта" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <input type="text" name="first_name" placeholder="Ім'я" required>
-                <input type="text" name="last_name" placeholder="Прізвище" required>
-                <button type="submit">Зареєструватися</button>
-            </form>
-            <p class="terms">
-                Реєструючись, ви погоджуєтесь з нашими <a href="#">Умовами використання</a> 
-                та <a href="#">Політикою конфіденційності</a>.
-            </p>
-        </div>
-    </div>
+
+<div class="w3-container w3-padding-64 w3-content" style="max-width:400px">
+  <div class="w3-card-4 w3-padding">
+    <h2 class="w3-center">Реєстрація</h2>
+    <p class="w3-center">Вже маєте акаунт? <a href="#">Увійти</a></p>
+
+    <form method="post" class="w3-container">
+      <p><input class="w3-input w3-border" type="email" name="email" placeholder="Електронна пошта" required></p>
+      <p><input class="w3-input w3-border" type="password" name="password" placeholder="Пароль" required></p>
+      <p><input class="w3-input w3-border" type="text" name="first_name" placeholder="Ім'я" required></p>
+      <p><input class="w3-input w3-border" type="text" name="last_name" placeholder="Прізвище" required></p>
+      <p><button class="w3-button w3-blue w3-block" type="submit">Зареєструватися</button></p>
+    </form>
+
+    <p class="w3-small w3-center">
+      Реєструючись, ви погоджуєтесь з нашими <a href="#">Умовами використання</a> 
+      та <a href="#">Політикою конфіденційності</a>.
+    </p>
+  </div>
+</div>
+
 </body>
 </html>
