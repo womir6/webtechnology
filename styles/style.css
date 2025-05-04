@@ -2,8 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("background.png");
+    background-image: url("../images/background.png");
     color: white;
+    font-family: Verdana;
 }
 .sticky {
     position: sticky;
@@ -15,13 +16,22 @@ main.content, footer {
     margin-left: 20px;
 }
 .border {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    outline: 1px solid rgba(255, 255, 255, 0.06);
+    outline-offset: -1px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
+.border:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    outline: 1px solid rgba(100, 149, 237, 0.3);
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -86,11 +96,9 @@ main.content, footer {
     color: black;
 }
 footer {
-    background-image: url("background.png");
-    outline: 3px solid #cccfff;
-    border: none;
     color: white;
     padding: 20px;
+    margin-left: 20px;
     text-align: center;
 }
 .footer-nav {
@@ -137,7 +145,7 @@ a {
 #goTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -162,14 +170,20 @@ a {
     border-radius: 10px;
     width: 300px;
     color: #000;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
 }
 .code-box {
-    background: #f1f1f1;
-    color: #000;
-    text-align: left;
+    background-color: #1c1c1c;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     font-family: monospace;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ccc;
+    text-align: left;
 }
 .blog-title {
     position: relative;
