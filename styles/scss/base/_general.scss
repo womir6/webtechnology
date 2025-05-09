@@ -1,0 +1,55 @@
+/* Загальні стилі */
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Стилі для body */
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background.png");
+  color: white;
+}
+.search-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: clamp(8px, 2vw, 16px);
+  width: clamp(50px, 50vw, 400px);
+}
+/* Стилі для поділу контенту на блоки з бордером */
+.border-box {
+  padding: 20px;
+  margin: 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: #1e1e1e;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.06);
+  outline-offset: -1px;
+  -webkit-transition: background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease, background-color 0.3s ease, -moz-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.3s ease, -moz-box-shadow 0.3s ease;
+}
+
+.border-box:hover {
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  outline: 1px solid rgba(100, 149, 237, 0.3);
+}
