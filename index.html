@@ -161,11 +161,11 @@ function greet(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `Hello, ${name}!`;<br>}
 def binary_search(arr, x):
 &nbsp;&nbsp;low = 0
 &nbsp;&nbsp;high = len(arr) - 1
-&nbsp;&nbsp;while low <= high:
+&nbsp;&nbsp;while low &lt;= high:
 &nbsp;&nbsp;&nbsp;&nbsp;mid = (low + high) // 2
 &nbsp;&nbsp;&nbsp;&nbsp;if arr[mid] == x:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return mid
-&nbsp;&nbsp;&nbsp;&nbsp;elif arr[mid] < x:
+&nbsp;&nbsp;&nbsp;&nbsp;elif arr[mid] &lt; x:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low = mid + 1
 &nbsp;&nbsp;&nbsp;&nbsp;else:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high = mid - 1
@@ -204,7 +204,7 @@ def bubble_sort(arr):
       <h2>Реалізація:</h2>
       <div class="code">
 def fibonacci(n):
-&nbsp;&nbsp;if n <= 1:
+&nbsp;&nbsp;if n &lt;= 1:
 &nbsp;&nbsp;&nbsp;&nbsp;return n
 &nbsp;&nbsp;else:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;return fibonacci(n-1) + fibonacci(n-2)
@@ -234,7 +234,7 @@ def dijkstra(graph, start):
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue
 &nbsp;&nbsp;&nbsp;&nbsp;for neighbor, weight in graph[vertex]:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance = current_dist + weight
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if distance < dist[neighbor]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if distance &lt; dist[neighbor]:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist[neighbor] = distance
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;heapq.heappush(pq, (distance, neighbor))
 &nbsp;&nbsp;return dist
