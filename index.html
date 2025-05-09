@@ -6,7 +6,6 @@
     <meta name="description" content="Безкоштовний та простий у використанні сайт для вивчення програмування.">
     <meta name="keywords" content="W3Schools, навчання, програмування, HTML, CSS, JavaScript">
     <meta name="author" content="Данило Максимов">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">  
     <title>Довідник з програмування</title>
@@ -16,7 +15,7 @@
   <header class="sticky">
     <div class="top-bar">
         <div class="logo">
-            <img src="images/logotype.png" alt="Логотип" width="50">
+            <a href="index.html"><img src="images/logotype.png" alt="Логотип" width="50"></a>
         </div>
         <nav class="main-nav">
             <div class="dropdown">Курси ▼</div>
@@ -61,7 +60,7 @@
     </nav>
     </header>
     <main class="content">
-        <div class="border">
+        <div class="border-box">
         <div class="welcome">
             <h2>Ласкаво просимо до нашого онлайн-ресурсу!</h2>
             <p>Цей сайт містить <em>корисну інформацію</em> для освоєння основ програмування, веб-розробки та технологій, які використовуються у сучасному програмуванні.</p>
@@ -75,8 +74,8 @@
         </div>
         </div>
     </div>  
-	<div class="border" style="justify-items:center; background-color: #1E1E2E;"><h2>Мови програмування</h2></div>
-	<div class="border">
+	<div class="border-box" style="justify-items:center; background-color: #1E1E2E;"><h2>Мови програмування</h2></div>
+	<div class="border-box">
 <div class="container">
     <div class="left">
       <h1>CSS</h1>
@@ -94,7 +93,7 @@ body {<br>  background-color: lightblue;<br>}<br><br>h1 {<br>  color: white;<br>
     </div>
   </div>
   </div>
-  <div class="border">
+  <div class="border-box">
   <div class="container">
     <div class="left">
       <h1>HTML</h1>
@@ -112,7 +111,7 @@ body {<br>  background-color: lightblue;<br>}<br><br>h1 {<br>  color: white;<br>
     </div>
   </div>
 </div>
-<div class="border">
+<div class="border-box">
   <div class="container">
     <div class="left">
       <h1>Python</h1>
@@ -130,7 +129,7 @@ def greet(name):<br>&nbsp;&nbsp;&nbsp;&nbsp;return f"Hello, {name}!"<br><br>prin
     </div>
   </div>
 </div>
-<div class="border">
+<div class="border-box">
   <div class="container">
     <div class="left">
       <h1>JavaScript</h1>
@@ -148,8 +147,8 @@ function greet(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `Hello, ${name}!`;<br>}
     </div>
   </div>
 </div>
-<div class="border" style="justify-items:center; background-color: #1E1E2E;"><h2>Алгоритми</h2></div>
-<div class="border">
+<div class="border-box" style="justify-items:center; background-color: #1E1E2E;"><h2>Алгоритми</h2></div>
+<div class="border-box">
   <div class="container">
     <div class="left">
       <h1>Binary Search</h1>
@@ -175,11 +174,11 @@ def binary_search(arr, x):
     </div>
   </div>
 </div>
-<div class="border">
+<div class="border-box">
   <div class="container">
     <div class="left">
       <h1>Bubble Sort</h1>
-      <p>Алгоритм сортування, який повторно проходить по списку, порівнює кожну пару сусідніх елементів і міняє їх місцями, якщо вони в неправильному порядку.</p>
+      <p>Алгоритм сортування, який проходить по списку, порівнює кожну пару сусідніх елементів і при необхідності міняє їх місцями.</p>
     </div>
     <div class="code-box">
       <h2>Реалізація:</h2>
@@ -194,7 +193,7 @@ def bubble_sort(arr):
     </div>
   </div>
 </div>
-<div class="border">
+<div class="border-box">
   <div class="container">
     <div class="left">
       <h1>Fibonacci</h1>
@@ -214,7 +213,7 @@ def fibonacci(n):
   </div>
 </div>
 
-<div class="border">
+<div class="border-box">
   <div class="container">
     <div class="left">
       <h1>Алгоритм Дейкстри</h1>
@@ -243,7 +242,7 @@ def dijkstra(graph, start):
     </div>
   </div>
 </div>
-    <div class="border">
+    <div class="border-box">
         <div class="projects">
             <h2>Рекомендовані проєкти для навчання</h2>
             <div class="grid">
@@ -281,50 +280,49 @@ def dijkstra(graph, start):
         </div>
         </div>
     </div>
-		<div class="border">
+		<div class="border-box">
 			<div class="all-languages">
 				<h2>Оберіть свою мову програмування!</h2>
 				<div class="grid">
-					<a href="#"><div class="card" style="background-color: hsl(240, 10%, 20%); color: #D6D6D6;"><h3>HTML</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(250, 12%, 22%); color: #D6D6D6;"><h3>CSS</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(260, 14%, 24%); color: #D6D6D6;"><h3>JavaScript</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(270, 16%, 26%); color: #D6D6D6;"><h3>Python</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(280, 18%, 28%); color: #D6D6D6;"><h3>Java</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(290, 20%, 30%); color: #D6D6D6;"><h3>C</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(300, 22%, 32%); color: #D6D6D6;"><h3>C++</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(310, 24%, 34%); color: #D6D6D6;"><h3>C#</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(320, 26%, 36%); color: #D6D6D6;"><h3>PHP</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(330, 28%, 38%); color: #D6D6D6;"><h3>TypeScript</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(340, 30%, 20%); color: #D6D6D6;"><h3>Swift</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(350, 32%, 22%); color: #D6D6D6;"><h3>Kotlin</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(0, 34%, 24%); color: #D6D6D6;"><h3>Rust</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(10, 36%, 26%); color: #D6D6D6;"><h3>Go</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(20, 38%, 28%); color: #D6D6D6;"><h3>Dart</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(30, 40%, 30%); color: #D6D6D6;"><h3>Ruby</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(40, 42%, 32%); color: #D6D6D6;"><h3>Perl</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(50, 44%, 34%); color: #D6D6D6;"><h3>Lua</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(60, 46%, 36%); color: #D6D6D6;"><h3>Haskell</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(70, 48%, 38%); color: #D6D6D6;"><h3>Elixir</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(80, 50%, 20%); color: #D6D6D6;"><h3>Scala</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(90, 52%, 22%); color: #D6D6D6;"><h3>F#</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(100, 54%, 24%); color: #D6D6D6;"><h3>Assembly</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(110, 56%, 26%); color: #D6D6D6;"><h3>SQL</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(120, 58%, 28%); color: #D6D6D6;"><h3>MATLAB</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(130, 60%, 30%); color: #D6D6D6;"><h3>R</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(140, 62%, 32%); color: #D6D6D6;"><h3>VB.NET</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(150, 64%, 34%); color: #D6D6D6;"><h3>Shell</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(160, 66%, 36%); color: #D6D6D6;"><h3>Bash</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(170, 68%, 38%); color: #D6D6D6;"><h3>PowerShell</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(180, 70%, 20%); color: #D6D6D6;"><h3>Objective-C</h3></div></a>
-					<a href="#"><div class="card" style="background-color: hsl(210, 76%, 26%); color: #D6D6D6;"><h3>Pascal</h3></div></a>
-
+          <div class="card" style="background-color: hsl(240, 10%, 20%);"><a href="#"><h3 style="color: #D6D6D6;">HTML</h3></a></div>
+          <div class="card" style="background-color: hsl(250, 12%, 22%);"><a href="#"><h3 style="color: #D6D6D6;">CSS</h3></a></div>
+          <div class="card" style="background-color: hsl(260, 14%, 24%);"><a href="#"><h3 style="color: #D6D6D6;">JavaScript</h3></a></div>
+          <div class="card" style="background-color: hsl(270, 16%, 26%);"><a href="#"><h3 style="color: #D6D6D6;">Python</h3></a></div>
+          <div class="card" style="background-color: hsl(280, 18%, 28%);"><a href="#"><h3 style="color: #D6D6D6;">Java</h3></a></div>
+          <div class="card" style="background-color: hsl(290, 20%, 30%);"><a href="#"><h3 style="color: #D6D6D6;">C</h3></a></div>
+          <div class="card" style="background-color: hsl(300, 22%, 32%);"><a href="#"><h3 style="color: #D6D6D6;">C++</h3></a></div>
+          <div class="card" style="background-color: hsl(310, 24%, 34%);"><a href="#"><h3 style="color: #D6D6D6;">C#</h3></a></div>
+          <div class="card" style="background-color: hsl(320, 26%, 36%);"><a href="#"><h3 style="color: #D6D6D6;">PHP</h3></a></div>
+          <div class="card" style="background-color: hsl(330, 28%, 38%);"><a href="#"><h3 style="color: #D6D6D6;">TypeScript</h3></a></div>
+          <div class="card" style="background-color: hsl(340, 30%, 20%);"><a href="#"><h3 style="color: #D6D6D6;">Swift</h3></a></div>
+          <div class="card" style="background-color: hsl(350, 32%, 22%);"><a href="#"><h3 style="color: #D6D6D6;">Kotlin</h3></a></div>
+          <div class="card" style="background-color: hsl(0, 34%, 24%);"><a href="#"><h3 style="color: #D6D6D6;">Rust</h3></a></div>
+          <div class="card" style="background-color: hsl(10, 36%, 26%);"><a href="#"><h3 style="color: #D6D6D6;">Go</h3></a></div>
+          <div class="card" style="background-color: hsl(20, 38%, 28%);"><a href="#"><h3 style="color: #D6D6D6;">Dart</h3></a></div>
+          <div class="card" style="background-color: hsl(30, 40%, 30%);"><a href="#"><h3 style="color: #D6D6D6;">Ruby</h3></a></div>
+          <div class="card" style="background-color: hsl(40, 42%, 32%);"><a href="#"><h3 style="color: #D6D6D6;">Perl</h3></a></div>
+          <div class="card" style="background-color: hsl(50, 44%, 34%);"><a href="#"><h3 style="color: #D6D6D6;">Lua</h3></a></div>
+          <div class="card" style="background-color: hsl(60, 46%, 36%);"><a href="#"><h3 style="color: #D6D6D6;">Haskell</h3></a></div>
+          <div class="card" style="background-color: hsl(70, 48%, 38%);"><a href="#"><h3 style="color: #D6D6D6;">Elixir</h3></a></div>
+          <div class="card" style="background-color: hsl(80, 50%, 20%);"><a href="#"><h3 style="color: #D6D6D6;">Scala</h3></a></div>
+          <div class="card" style="background-color: hsl(90, 52%, 22%);"><a href="#"><h3 style="color: #D6D6D6;">F#</h3></a></div>
+          <div class="card" style="background-color: hsl(100, 54%, 24%);"><a href="#"><h3 style="color: #D6D6D6;">Assembly</h3></a></div>
+          <div class="card" style="background-color: hsl(110, 56%, 26%);"><a href="#"><h3 style="color: #D6D6D6;">SQL</h3></a></div>
+          <div class="card" style="background-color: hsl(120, 58%, 28%);"><a href="#"><h3 style="color: #D6D6D6;">MATLAB</h3></a></div>
+          <div class="card" style="background-color: hsl(130, 60%, 30%);"><a href="#"><h3 style="color: #D6D6D6;">R</h3></a></div>
+          <div class="card" style="background-color: hsl(140, 62%, 32%);"><a href="#"><h3 style="color: #D6D6D6;">VB.NET</h3></a></div>
+          <div class="card" style="background-color: hsl(150, 64%, 34%);"><a href="#"><h3 style="color: #D6D6D6;">Shell</h3></a></div>
+          <div class="card" style="background-color: hsl(160, 66%, 36%);"><a href="#"><h3 style="color: #D6D6D6;">Bash</h3></a></div>
+          <div class="card" style="background-color: hsl(170, 68%, 38%);"><a href="#"><h3 style="color: #D6D6D6;">PowerShell</h3></a></div>
+          <div class="card" style="background-color: hsl(180, 70%, 20%);"><a href="#"><h3 style="color: #D6D6D6;">Objective-C</h3></a></div>
+          <div class="card" style="background-color: hsl(210, 76%, 26%);"><a href="#"><h3 style="color: #D6D6D6;">Pascal</h3></a></div>
 				</div>
 			</div>
 		</div>
     <a href="#top" id="goTopBtn">⬆</a>
     </main>
     <footer>
-        <div class="border">
+        <div class="border-box">
       <div class="footer-nav">
             <div class="footer-logo footer-item">
                 <img src="images/logotype.png" alt="Логотип" width="60">

@@ -6,9 +6,8 @@
   <meta name="description" content="Безкоштовний та простий у використанні сайт для вивчення програмування.">
   <meta name="keywords" content="W3Schools, навчання, програмування, HTML, CSS, JavaScript">
   <meta name="author" content="Данило Максимов">
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="images/logo.ico" type="image/x-icon">
   <title>Реєстрація</title>
 </head>
@@ -16,7 +15,7 @@
   <header class="sticky">
     <div class="top-bar">
         <div class="logo">
-            <img src="images/logotype.png" alt="Логотип" width="50">
+            <a href="index.html"><img src="images/logotype.png" alt="Логотип" width="50"></a>
         </div>
         <nav class="main-nav">
             <div class="dropdown">Курси ▼</div>
@@ -60,91 +59,93 @@
         <a href="#">Go</a>
     </nav>
     </header>
-  <main>
-    <div class="w3-container w3-padding-64 w3-content" style="max-width:400px;">
-      <div class="w3-card-4 w3-padding" style="background-color: #1e1e1e; color: #fff; padding: 30px;">
-        <h2 class="w3-center">Реєстрація</h2>
-        <p class="w3-center">Вже маєте акаунт? <a href="login.html" style="color: #fff; text-decoration: underline;">Увійти</a></p>
-    
-        <form method="post" class="w3-container">
-          <p><input class="w3-input w3-border" type="email" name="email" placeholder="Електронна пошта" required style="background-color: #444; color: #fff; border-color: #555;"></p>
-          <p><input class="w3-input w3-border" type="password" name="password" placeholder="Пароль" required style="background-color: #444; color: #fff; border-color: #555;"></p>
-          <p><input class="w3-input w3-border" type="text" name="first_name" placeholder="Ім'я" required style="background-color: #444; color: #fff; border-color: #555;"></p>
-          <p><input class="w3-input w3-border" type="text" name="last_name" placeholder="Прізвище" required style="background-color: #444; color: #fff; border-color: #555;"></p>
-          <p><button class="w3-button w3-blue w3-block" type="submit">Зареєструватися</button></p>
-        </form>
-    
-        <p class="w3-small w3-center">
-          Реєструючись, ви погоджуєтесь з нашими <a href="#" style="color: #fff; text-decoration: underline;">Умовами використання</a> 
-          та <a href="#" style="color: #fff; text-decoration: underline;">Політикою конфіденційності</a>.
-        </p>
-      </div>
-    </div>
-    <a href="#top" id="goTopBtn">⬆</a>
-  </main>
-  <footer>
-    <div class="border">
-  <div class="footer-nav">
-        <div class="footer-logo footer-item">
-            <img src="images/logotype.png" alt="Логотип" width="60">
-        </div>
-        <nav class="footer-menu footer-item">
-            <a href="#">ПЛЮС</a>
-            <a href="#">ПРОСТОРИ</a>
-            <a href="#">СЕРТИФІКАЦІЯ</a>
-            <a href="#">ДЛЯ ВЧИТЕЛІВ</a>
-            <a href="#">ДЛЯ БІЗНЕСУ</a>
-            <a href="#">КОНТАКТИ</a>
-        </nav>
-    </div>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Топ підручники</h3>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">C++</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Топ довідники</h3>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">C++</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Топ приклади</h3>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">C++</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Сертифікація</h3>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">C++</a></li>
-            </ul>
-        </div>
-    </div>
-    <p>&copy; 2025 Онлайн-довідник з програмування. Усі права захищені.</p>
+  <main class="min-h-screen flex items-center justify-center px-4">
+  <div class="w-full max-w-md bg-[#1e1e1e] text-white rounded-xl shadow-lg p-8">
+    <h2 class="text-3xl font-bold text-center mb-4">Реєстрація</h2>
+    <p class="text-center mb-6 text-sm">
+      Вже маєте акаунт? 
+      <a href="login.html" class="text-blue-400 hover:underline">Увійти</a>
+    </p>
+    <form method="post" class="space-y-4">
+      <input type="email" name="email" placeholder="Електронна пошта" required class="w-full px-4 py-2 bg-[#2c2c2c] text-white border border-[#3a3a3a] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <input type="password" name="password" placeholder="Пароль" required class="w-full px-4 py-2 bg-[#2c2c2c] text-white border border-[#3a3a3a] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <input type="text" name="first_name" placeholder="Ім'я" required class="w-full px-4 py-2 bg-[#2c2c2c] text-white border border-[#3a3a3a] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <input type="text" name="last_name" placeholder="Прізвище" required class="w-full px-4 py-2 bg-[#2c2c2c] text-white border border-[#3a3a3a] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button type="submit" class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition">
+        Зареєструватися
+      </button>
+    </form>
+    <p class="text-sm text-center mt-6">
+      Реєструючись, ви погоджуєтесь з нашими 
+      <a href="#" class="text-blue-400 hover:underline">Умовами використання</a> та 
+      <a href="#" class="text-blue-400 hover:underline">Політикою конфіденційності</a>.
+    </p>
   </div>
-</footer>
+  <a href="#top" id="goTopBtn" class="hidden">⬆</a>
+</main>
+    <footer>
+        <div class="border-box">
+      <div class="footer-nav">
+            <div class="footer-logo footer-item">
+                <img src="images/logotype.png" alt="Логотип" width="60">
+            </div>
+            <nav class="footer-menu footer-item">
+                <a href="#">ПЛЮС</a>
+                <a href="#">ПРОСТОРИ</a>
+                <a href="#">СЕРТИФІКАЦІЯ</a>
+                <a href="#">ДЛЯ ВЧИТЕЛІВ</a>
+                <a href="#">ДЛЯ БІЗНЕСУ</a>
+                <a href="#">КОНТАКТИ</a>
+            </nav>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Топ підручники</h3>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C++</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Топ довідники</h3>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C++</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Топ приклади</h3>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C++</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Сертифікація</h3>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C++</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 Онлайн-довідник з програмування. Усі права захищені.</p>
+      </div>
+    </footer>
 </body>
 </html>
