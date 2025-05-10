@@ -13,7 +13,6 @@ body {
   font-family: Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("../images/background.png");
   color: white;
 }
 .search-container input {
@@ -53,6 +52,6 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
   outline: 1px solid rgba(100, 149, 237, 0.3);
 }
-html, body {
-  overflow-x: hidden;
+html {
+  background-image: url("../images/background.png");
 }
