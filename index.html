@@ -88,7 +88,7 @@
                     <div class="code-box">
                         <h2>Приклад:</h2>
                         <div class="code">
-                            body {<br>  background-color: lightblue;<br>}<br><br>h1 {<br>  color: white;<br>  text-align: center;<br>}<br><br>p {<br>  font-family: verdana;<br>}
+body {<br>  background-color: lightblue;<br>}<br><br>h1 {<br>  color: white;<br>  text-align: center;<br>}<br><br>p {<br>  font-family: verdana;<br>}
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -106,7 +106,7 @@
                     <div class="code-box">
                         <h2>Приклад:</h2>
                         <div class="code">
-                            &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&lt;title&gt;My First HTML Page&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;This is a simple HTML page.&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&lt;title&gt;My First HTML Page&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;This is a simple HTML page.&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -124,7 +124,7 @@
                     <div class="code-box">
                         <h2>Приклад:</h2>
                         <div class="code">
-                            def greet(name):<br>&nbsp;&nbsp;&nbsp;&nbsp;return f"Hello, {name}!"<br><br>print(greet("World"))
+def greet(name):<br>&nbsp;&nbsp;&nbsp;&nbsp;return f"Hello, {name}!"<br><br>print(greet("World"))
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -142,7 +142,7 @@
                     <div class="code-box">
                         <h2>Приклад:</h2>
                         <div class="code">
-                            function greet(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `Hello, ${name}!`;<br>}<br><br>console.log(greet("World"));
+function greet(name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return `Hello, ${name}!`;<br>}<br><br>console.log(greet("World"));
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -160,18 +160,18 @@
                     <div class="code-box">
                         <h2>Реалізація</h2>
                         <div class="code">
-                            def binary_search(arr, x):
-                            &nbsp;&nbsp;low = 0
-                            &nbsp;&nbsp;high = len(arr) - 1
-                            &nbsp;&nbsp;while low &lt;= high:
-                            &nbsp;&nbsp;&nbsp;&nbsp;mid = (low + high) // 2
-                            &nbsp;&nbsp;&nbsp;&nbsp;if arr[mid] == x:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return mid
-                            &nbsp;&nbsp;&nbsp;&nbsp;elif arr[mid] &lt; x:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low = mid + 1
-                            &nbsp;&nbsp;&nbsp;&nbsp;else:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high = mid - 1
-                            &nbsp;&nbsp;return -1
+def binary_search(arr, x):
+&nbsp;&nbsp;low = 0
+&nbsp;&nbsp;high = len(arr) - 1
+&nbsp;&nbsp;while low &lt;= high:
+&nbsp;&nbsp;&nbsp;&nbsp;mid = (low + high) // 2
+&nbsp;&nbsp;&nbsp;&nbsp;if arr[mid] == x:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return mid
+&nbsp;&nbsp;&nbsp;&nbsp;elif arr[mid] &lt; x:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low = mid + 1
+&nbsp;&nbsp;&nbsp;&nbsp;else:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high = mid - 1
+&nbsp;&nbsp;return -1
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -186,11 +186,11 @@
                     <div class="code-box">
                         <h2>Реалізація:</h2>
                         <div class="code">
-                            def bubble_sort(arr):
-                            &nbsp;&nbsp;for i in range(len(arr)):
-                            &nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, len(arr)-i-1):
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if arr[j] > arr[j+1]:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[j], arr[j+1] = arr[j+1], arr[j]
+def bubble_sort(arr):
+&nbsp;&nbsp;for i in range(len(arr)):
+&nbsp;&nbsp;&nbsp;&nbsp;for j in range(0, len(arr)-i-1):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if arr[j] > arr[j+1]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[j], arr[j+1] = arr[j+1], arr[j]
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -205,11 +205,11 @@
                     <div class="code-box">
                         <h2>Реалізація:</h2>
                         <div class="code">
-                            def fibonacci(n):
-                            &nbsp;&nbsp;if n &lt;= 1:
-                            &nbsp;&nbsp;&nbsp;&nbsp;return n
-                            &nbsp;&nbsp;else:<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;return fibonacci(n-1) + fibonacci(n-2)
+def fibonacci(n):
+&nbsp;&nbsp;if n &lt;= 1:
+&nbsp;&nbsp;&nbsp;&nbsp;return n
+&nbsp;&nbsp;else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return fibonacci(n-1) + fibonacci(n-2)
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
@@ -224,21 +224,21 @@
                     <div class="code-box">
                         <h2>Реалізація:</h2>
                         <div class="code">
-                            import heapq<br>
-                            def dijkstra(graph, start):
-                            &nbsp;&nbsp;dist = {vertex: float('infinity') for vertex in graph}
-                            &nbsp;&nbsp;dist[start] = 0
-                            &nbsp;&nbsp;pq = [(0, start)]
-                            &nbsp;&nbsp;while pq:
-                            &nbsp;&nbsp;&nbsp;&nbsp;current_dist, vertex = heapq.heappop(pq)
-                            &nbsp;&nbsp;&nbsp;&nbsp;if current_dist > dist[vertex]:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue
-                            &nbsp;&nbsp;&nbsp;&nbsp;for neighbor, weight in graph[vertex]:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance = current_dist + weight
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if distance &lt; dist[neighbor]:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist[neighbor] = distance
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;heapq.heappush(pq, (distance, neighbor))
-                            &nbsp;&nbsp;return dist
+import heapq<br>
+def dijkstra(graph, start):
+&nbsp;&nbsp;dist = {vertex: float('infinity') for vertex in graph}
+&nbsp;&nbsp;dist[start] = 0
+&nbsp;&nbsp;pq = [(0, start)]
+&nbsp;&nbsp;while pq:
+&nbsp;&nbsp;&nbsp;&nbsp;current_dist, vertex = heapq.heappop(pq)
+&nbsp;&nbsp;&nbsp;&nbsp;if current_dist > dist[vertex]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue
+&nbsp;&nbsp;&nbsp;&nbsp;for neighbor, weight in graph[vertex]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance = current_dist + weight
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if distance &lt; dist[neighbor]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist[neighbor] = distance
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;heapq.heappush(pq, (distance, neighbor))
+&nbsp;&nbsp;return dist
                         </div>
                         <button class="try-btn">Спробуй!</button>
                     </div>
